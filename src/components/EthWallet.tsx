@@ -43,7 +43,7 @@ const EthWallet = () => {
   };
 
   return (
-    <div className='w-full min-h-screen   text-white flex flex-col items-center  '>
+    <div className='w-full     text-white flex flex-col items-center  '>
       <h1 className='text-3xl font-bold mb-4'>Ethereum Wallet Generator</h1>
       <button
         className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4'
