@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import   { useState } from 'react';
 import SolWallet from './components/SolWallet';
 import EthWallet from './components/EthWallet';
 import GenerateMnemonics from './components/GenerateMnemonics';
