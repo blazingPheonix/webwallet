@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# 🔑 Mnemonic Generator & Validator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **secure and user-friendly** React application that generates **BIP39 mnemonics**, allows users to **input their own mnemonic**, and validates them. This project is useful for **cryptocurrency wallets** and **blockchain applications** that rely on mnemonic phrases for key management.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- ✅ **Generate Mnemonic** – Create a 12-word BIP39 mnemonic phrase.  
+- ✅ **Copy Mnemonic** – Copy the generated mnemonic to the clipboard.  
+- ✅ **Enter Custom Mnemonic** – Manually input a mnemonic phrase.  
+- ✅ **Validate Mnemonic** – Check if the entered mnemonic is valid.  
+- ✅ **Redux Integration** – Mnemonics are managed using Redux.  
+- ✅ **User-friendly UI** – Responsive and modern design with Tailwind CSS.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🏰 Tech Stack
+- **Frontend:** React, TypeScript, Tailwind CSS  
+- **State Management:** Redux Toolkit  
+- **Libraries Used:** `bip39`, `react-hot-toast`  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📌 Installation & Setup
+### **1. Clone the Repository**
+```sh
+git clone https://github.com/your-username/mnemonic-generator.git
+cd mnemonic-generator
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### **2. Install Dependencies**
+```sh
+npm install
 ```
+
+### **3. Run the Development Server**
+```sh
+npm run dev
+```
+Now, open **http://localhost:5173/** in your browser.
+
+---
+
+ 
+1. Click on **"Generate Mnemonic"** to create a 12-word phrase.
+2. The mnemonic will be displayed in a **grid format**.
+3. You can **copy** the mnemonic using the "Copy Mnemonic" button.
+4. **To validate**, enter a mnemonic manually in the input field.
+5. If the entered mnemonic is valid, a **success message** will be displayed.
+6. If the mnemonic is invalid, an **error message** will appear.
+
+---
+
+## 📤 Deployment
+### **Deploy on Vercel**
+1. Push your code to GitHub.
+2. Create a new project on [Vercel](https://vercel.com/).
+3. Connect your repository and deploy.
+
+If you face any **TypeScript or missing module issues**, ensure:
+```sh
+npm install ethers bs58 @types/bs58 --save-dev
+```
+and update `tsconfig.json`:
+```json
+{
+  "compilerOptions": {
+    "skipLibCheck": true
+  }
+}
+```
+
+---
+
+ 
+
+---
+
+ 
+
+## 🐝 Contributing
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+
+
+---
+
+## 💌 Contact
+For queries, feel free to reach out!  
+📧 Email: [shandilya.rishabh117@gmail.com](mailto:shandilya.rishabh117@gmail.com)  
+🐦
+
